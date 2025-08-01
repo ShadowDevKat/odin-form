@@ -19,6 +19,28 @@ body {
 .left-container {
     width: 30%;
     background: url(imgs/background.jpg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-bar {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-img {
+    height: 80%;
+    width: auto;
+}
+.logo-text {
+    font: 5rem norsebold, sans-serif;
+    color: white;
 }
 
 .right-container {
