@@ -7,9 +7,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'garet_book';
+    src:
+        url('fonts/Garet-Book.woff2') format('woff2'),
+        url('fonts/Garet-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --color-one: white;
-    font: 14px sans-serif;
+    font: 14px garet_book;
 }
 
 body {
@@ -53,7 +62,7 @@ body {
 .credit {
     margin-top: auto;
     margin-bottom: 4%;
-    font: 1.1rem sans-serif;
+    font: 1.1rem garet_book;
     color: var(--color-one);
 }
 
@@ -73,14 +82,14 @@ body {
 
 .top-text,
 .action-text {
-    font: 2.5rem sans-serif;
+    font: 2.5rem garet_book;
     line-height: 3rem;
     font-weight: 600;
 }
 
 .form-container {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    height: 300px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    height: 400px;
     padding-left: 2%;
 }
 
@@ -100,8 +109,8 @@ form {
 
 .input-group {
     display: flex;
-    flex-direction: column;    
-    font: 1.2rem sans-serif;
+    flex-direction: column;
+    font: 1.2rem garet_book;
     text-transform: uppercase;
     gap: 6px;
 }
@@ -116,7 +125,28 @@ input {
     gap: 20%;
 }
 
+form>button {
+    /* margin-top: 16px; */
+    align-self: flex-start;
+    font: 1.2rem garet_book;
+    color: var(--color-one);
+    width: 300px;
+    height: 40px;
+    background-color: #596D48;
+}
+
+.bottom-text {
+    font: 1.2rem garet_book;
+    padding-left: 2%;
+}
+
 div {
     margin: 0;
     padding: 0;
+}
+
+h1 {
+    font: 2rem garet_book;
+    padding: 0;
+    margin: 0;
 }
